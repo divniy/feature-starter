@@ -1,0 +1,21 @@
+{
+    "name": "Apt-cacher-ng feature",
+    "id": "apt-cacher",
+    "version": "1.0.0",
+    "description": "Apt-cacher-ng feature. Add 01proxy into aptitude config dir",
+    "options": {
+        "hostname": {
+            "type": "string",
+            "proposals": [
+                "localhost",
+                "host.docker.internal",
+                "apt-cacher-ng"
+            ],
+            "default": "localhost",
+            "description": "Select hostname on which apt-cacher-ng is running"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}
