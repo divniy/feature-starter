@@ -7,11 +7,12 @@
         "hostname": {
             "type": "string",
             "proposals": [
+                "172.17.0.1",
                 "localhost",
                 "host.docker.internal",
                 "apt-cacher-ng"
             ],
-            "default": "localhost",
+            "default": "172.17.0.1",
             "description": "Select hostname on which apt-cacher-ng is running"
         }
     },
