@@ -30,8 +30,8 @@
 #                   --base-image mcr.microsoft.com/devcontainers/base:ubuntu \
 #                   /path/to/this/repo
 
-# devcontainer features test --features apt-cacher --remote-user root --skip-scenarios --base-image mcr.microsoft.com/devcontainers/base:1-bookworm
-# devcontainer features test --features apt-cacher --remote-user root --skip-scenarios --base-image ghcr.io/rails/devcontainer/images/ruby:3.4.4
+# devcontainer features test --features apt-proxy --remote-user root --skip-scenarios --base-image mcr.microsoft.com/devcontainers/base:1-bookworm
+# devcontainer features test --features apt-proxy --remote-user root --skip-scenarios --base-image ghcr.io/rails/devcontainer/images/ruby:3.4.4
 
 set -e
 

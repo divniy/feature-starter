@@ -1,12 +1,9 @@
 {
-    "color_and_hello": {
-        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "proxy_on_ruby": {
+        "image": "ghcr.io/rails/devcontainer/images/ruby:3.4.4",
         "features": {
-            "color": {
-                "favorite": "purple"
-            },
-            "hello": {
-                "greeting": "Greetings"
+            "apt-proxy": {
+                "hostname": "localhost"
             }
         }
     }

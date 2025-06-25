@@ -1,0 +1,29 @@
+{
+    "sourceInformation": {
+        "source": "devcontainer-cli"
+    },
+    "features": [
+        {
+            "name": "Apt proxy feature",
+            "id": "apt-proxy",
+            "version": "1.0.0",
+            "description": "A feature to work with apt-cacher-ng. Add 01proxy to apt config.",
+            "options": {
+                "hostname": {
+                    "type": "string",
+                    "proposals": [
+                        "172.17.0.1",
+                        "localhost",
+                        "host.docker.internal",
+                        "apt-cacher-ng"
+                    ],
+                    "default": "172.17.0.1",
+                    "description": "Select hostname on which apt-cacher-ng is running"
+                }
+            },
+            "installsAfter": [
+                "ghcr.io/devcontainers/features/common-utils"
+            ]
+        }
+    ]
+}

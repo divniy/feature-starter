@@ -1,8 +1,8 @@
 {
-    "name": "Apt-cacher-ng feature",
-    "id": "apt-cacher",
+    "name": "Apt proxy feature",
+    "id": "apt-proxy",
     "version": "1.0.0",
-    "description": "Apt-cacher-ng feature. Add 01proxy into aptitude config dir",
+    "description": "A feature to work with apt-cacher-ng. Add 01proxy to apt config.",
     "options": {
         "hostname": {
             "type": "string",
